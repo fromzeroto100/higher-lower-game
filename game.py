@@ -6,6 +6,10 @@ import random
 print(logo)
 
 
+game_end = False
+
+user_choice = ""
+
 
 # def people_data(profile):
 #     print("name: ", profile.get("name", "N/A"))
@@ -20,17 +24,20 @@ print(logo)
 #     people_data(person)   
 #     print(vs)
 
-# Generate a random account from the game
-def get_random_account():
-    return random.choice(data)
-
-# Format the account data into printable format
+# user_choice = input("Enter your choice: ")    
 def format_data(account):
-    name = account["name"]
-    description = account["description"]
-    country = account["country"]
+    account_name = account["name"]
+    account_descr = account["description"]
+    account_country = account[""]
+# Generate a random account from the game
+account_a = random.choice(data)
+account_b = random.choice(data)
 
-    return(f"{name}: a {description}, from {country}")
+if account_a == account_b:
+    account_b = random.choice(data)
+  
+# Format the account data into printable format
+
 # Ask user for a guess
 
 # Check if user is correct.
